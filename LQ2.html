@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cravings</title>
+    <link rel="icon" type="image/x-icon" href="cake.png">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #8a7985; /* Beige background */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffe5b4; /* Light peach */
+        }
+        h1 {
+            color: #ee10ab; /* Golden yellow */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #ffeadf; /* Light pink */
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(223, 120, 137);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #ffe4e1; /* Light pink hover */
+            color: #d8adad; /* Dark gray */
+        }
+
+        /* Sections */
+        section {
+            display: none; /* Hide all sections by default */
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        section:target {
+            display: block; /* Show only the targeted section */
+        }
+
+        /* Shop Section Styling */
+        #shop h2 {
+            color: rgb(241, 39, 184);
+        }
+        #shop h3 {
+            color: rgb(186, 66, 186);
+        }
+        #shop ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #ffe5b4; /* Light peach */
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Sweet Cravings</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#help">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Sweet Cravings!</h2>
+        <p>Your one-stop shop for delicious cakes. Explore our menu, customize your order, and let us sweeten your day!</p>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2>Shop</h2>
+        <p>Browse through our options to find your perfect cake!</p>
+        
+        <h3>Type</h3>
+        <ul>
+            <li>Custom Cake
+                <!-- Image under Custom Cake -->
+                <img src="custom cake.png" alt="Custom Cake" style="width: 100%; max-width: 300px; border-radius: 8px; margin-top: 10px;">
+            </li>
+            <li>Wedding Cake
+                <!-- Image under Wedding Cake -->
+                <img src="wedding cake.jpg" alt="Wedding Cake" style="width: 100%; max-width: 250px; border-radius: 5px; margin-top: px;">
+            </li>
+        </ul>
+    
+        <h3>Flavor</h3>
+        <ul>
+            <li>Chocolate</li>
+            <li>Vanilla</li>
+            <li>Strawberry</li>
+            <li>Red Velvet</li>
+            <li>Cookies and Cream</li>
+        </ul>
+
+        <h3>Size</h3>
+        <ul>
+            <li>Single-Tier</li>
+            <li>Two-Tier</li>
+        </ul>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order">
+        <h2>Order</h2>
+        <p>Customize your cake and provide delivery details below:</p>
+        <form>
+            <label for="cake-type">Cake Type:</label>
+            <select id="cake-type" name="cake-type">
+                <option value="custom">Custom Cake</option>
+                <option value="wedding">Wedding Cake</option>
+            </select>
+            <br>
+            <label for="flavor">Flavor:</label>
+            <select id="flavor" name="flavor">
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="red-velvet">Red Velvet</option>
+                <option value="cookies-cream">Cookies and Cream</option>
+            </select>
+            <br>
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="single">Single-Tier</option>
+                <option value="two">Two-Tier</option>
+            </select>
+        </form>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help">
+        <h2>Help</h2>
+        <p>Need assistance? Find the information below:</p>
+        
+        <h3>FAQs</h3>
+        <div class="faq">
+            <button class="faq-question">Q: How do I place an order?</button>
+            <div class="faq-answer">
+                <p>A: Simply visit the "Order" section, choose your cake type, flavor, and size, then submit your order. We'll take care of the rest!</p>
+            </div>
+        </div>
+    
+        <div class="faq">
+            <button class="faq-question">Q: Can I make changes to my order after it's placed?</button>
+            <div class="faq-answer">
+                <p>A: Changes can be made up to 24 hours before the delivery date. Please contact our support for any modifications.</p>
+            </div>
+        </div>
+    
+        <div class="faq">
+            <button class="faq-question">Q: Do you offer vegan or gluten-free cakes?</button>
+            <div class="faq-answer">
+                <p>A: Yes, we offer both vegan and gluten-free options. Please specify your dietary requirements when placing an order.</p>
+            </div>
+        </div>
+        
+        <h3>Delivery Policy</h3>
+        <p>We deliver cakes within a 20-mile radius of our bakery. Delivery fees are calculated based on distance. For orders outside of this area, please contact us for a custom delivery arrangement. We aim for timely delivery, ensuring your cake arrives fresh and intact!</p>
+        
+        <h3>Refund Policy</h3>
+        <p>If you are not satisfied with your cake, please contact us within 24 hours of delivery for a full refund or replacement.This is our contact number 09552215178. Refunds or exchanges are subject to the condition of the cake upon delivery. Custom orders may have additional terms and conditions based on design specifics.</p>
+    </section>
+    
+    <!-- Add this JavaScript to make the FAQs interactive -->
+    <script>
+        // Get all FAQ questions
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        // Add event listeners for each FAQ question
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                // Toggle the display of the associated answer
+                const answer = question.nextElementSibling;
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+    
+    <!-- Add some basic CSS for hiding and showing answers -->
+    <style>
+        .faq-answer {
+            display: none; /* Hide answers by default */
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+    
+        .faq-question {
+            background-color: #ffe5b4; /* Light peach */
+            border: none;
+            text-align: left;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .faq-question:hover {
+            background-color: #ffeadf; /* Light pink */
+        }
+    </style>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sweet Cravings. All rights reserved.</p>
+    </footer>
+</body>
+</html>
